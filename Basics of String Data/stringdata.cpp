@@ -6,20 +6,21 @@ using namespace std;
 int main()
 {
 	cout << "Capturing String Data Type and Limitation of cinn>> : \n";
-	string myName;
-	cout << " Input your full name : ";
+	string cinmyname;
+	string getlinemyname;
 
-	//getline will output both names i.e Catherine Kimani
-	getline (cin, myName);
+	cout << " Type in your full name : ";
+	getline (cin, getlinemyname);
+
+	cout << " Type in your full name : ";
+	cin >> cinmyname;
 
 	//cin>> will output Catherine only
-	//cin>>myName;
+	// getline  will output Catherine Kimani
 	cout << "\n";
-	cout << "Hey, Your name using cin>> is :" << myName << endl;
-	cout << "Hey, your Name using getline () function is :" << myName << endl;
+	cout << "Hey, Your name using cin>> is :" << cinmyname << endl;
+	cout << "Hey, your Name using getline () function is :" << getlinemyname << endl;
 
-	//input full name : Catherine Kimani
-	//Hey, your name is : Catherine
 
 	return 0;
 }
